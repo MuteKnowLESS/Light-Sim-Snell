@@ -26,7 +26,7 @@ c.create_line(0,y,0,x,fill='grey', width=2, dash=(10,5))
 
 
 # makes a list of materials and assings them a value
-mat = ['diamond', 'ice','glass', 'water']
+mat = ['water','diamond', 'ice','glass', 'water']
 reflective_index = {
   'water': 1.33,
   'ice': 1.30,
@@ -75,7 +75,7 @@ n1 = 1
 
 # setting n2_in for Integers
 n2_in = StringVar()
-n2_in.set(mat[3])
+n2_in.set(mat[4])
 val = IntVar(ws)
 
 # creating drop down widget
