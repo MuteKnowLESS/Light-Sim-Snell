@@ -9,7 +9,7 @@ heighty = 700
 ws = Tk()
 ws.title('Light Sim')
 ws.geometry('800x700')
-#ws.resizable(False, False)
+ws.resizable(False, False)
 ws.config(bg='white')
 x = 250
 y = -250
@@ -55,7 +55,7 @@ def draw_graph():
   c.delete('ref')
  
   # draws lines
-  c.create_line(0,0,-end_x_re,-end_y_re, fill='red',width=3, tags='ref')
+  c.create_line(0,0,-end_x_re,-end_y_re, fill='#ff6161',width=3, tags='ref')
   c.create_line(0,0,end_x_de,end_y_de, fill='red',width=3, tags='ref')
   c.create_line(0,0,end_x_re,-end_y_re, fill='green',width=3, tags='ref')
   c.create_line(0,0,-end_x_re,end_y_re, dash=(10,5), fill=('green'), width=3, tags='ref')
